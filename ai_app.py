@@ -3,9 +3,9 @@ from openai import OpenAI
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-st.title("Mening AI yordamchim 🤖")
+st.title("ljus 🤖")
 
-savol = st.text_input("Savol yoz:")
+savol = st.text_input("har qanday muomma hal qilamiz:")
 
 if savol:
     response = client.chat.completions.create(
